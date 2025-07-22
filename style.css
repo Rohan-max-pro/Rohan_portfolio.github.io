@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400..800&family=Baloo+Bhaina+2:wght@400..800&display=swap');
+
+/* utility selecter  */
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1rem;
+    font-family: "Baloo Bhai 2";
+    
+}
+
+body {
+    background-color: #323946;
+    position: relative;
+}
+/* nav bar */
+header {
+    position: sticky;
+    z-index: 5;
+    top: 0px;
+}
+
+nav {
+    width: 100%;
+    height: 55px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    opacity: .82;
+    background:#371445;
+    /* background-image: linear-gradient(to right, aliceblue, #84e0ff); */
+
+}
+.hidden{
+    visibility: hidden;
+    position: fixed;
+    top: 18px;
+    color: #00EEFF;
+
+}
+.logo p{
+   color: #63c4eb;
+    font-size: 2.5rem;
+    width: 79%;
+    height: 55px;
+    font-variant: small-caps;
+   
+}
+.logo ::first-letter {
+    color: #ff004f;
+    font-size: 43px;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+.nav-menu li {
+    width: 19%;
+    padding: 0px 11px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+}
+.nav-menu li:hover {
+    border:2px solid white;
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: 1.3rem;
+}
+
+/* home section*/
+
+#Home {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: rgb(19, 5, 5);
+    /* margin: 10px 0px; */
+    align-items: center;
+    background-image: url(asset/stefan-stefancik--g7axSVst6Y-unsplash.jpg);
+    /* background-position: top top; */
+    background-repeat: no-repeat;
+}
+
+.box{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.50;
+}
+
+.leftsection{
+    height: 75%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1.4rem;
+    z-index: 1;
+}
+
+.leftsection h1{
+    font-size: 3.8rem;
+    line-height: 60px;
+    font-family: 'baloo bhaina 2';
+}
+.leftsection p{
+    width: 50%;
+}
+.leftsection > div {
+    font-size: 1.9rem;
+    font-weight: bold;
+    font-family: ui-sans-serif;
+}
+.leftsection > div span {
+    color: darkviolet;
+    font-size: 2rem;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 115px;
+}
+.icons i {
+    font-size: 2rem;
+}
+
+.rightsection{
+   height: 91%;
+    width: 30%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home-image{
+    width: 90%;
+    height: 67%;
+    position: relative;
+}
+.home-image img{
+    position: absolute;
+    width: 66%;
+    z-index: 2;
+}
+.circle
+{
+    width: 53%;
+    height: 48%;
+    background-color: #051b1b;
+    border: 4px solid transparent;
+    border-radius: 52px;
+    position: absolute;
+    top: 66px;
+    left: 24px;
+    box-shadow: 1px 18px 15px 1px #465d63;
+}
+
+/* About section */
+#About {
+    width: 100%;
+    height: 115vh;
+    background-color: #14191a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+ h2{
+    font-size: 1.5rem;
+    color: #14bd7c;
+    text-align: center;
+}
+#About h2 span {
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+.About-menu {
+    width: 81%;
+    height: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+
+}
+.profie {
+    width: 29%;
+    height: 122%;
+    background-color: #052926;
+    border: none;
+    border-radius: 11px;
+    position: relative;
+    bottom: 2px;
+}
+.profie p
+{
+    color: #051b1b;
+}
+.details {
+    width: 74%;
+    height: 96%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.edu {
+    display: inline-block;
+    padding: 0 0 3px;
+    border-bottom: 2px solid aliceblue;
+    color: chartreuse;
+}
+.details li div {
+    color: #00EEFF;
+    font-weight: 600;
+    margin-top: 19px;
+}
+
+.profie img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: inherit;
+    bottom: 0px;
+}
+
+/* section skill */
+#Skill {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 19px;
+}
+#Skill h2 span {
+    color: aqua;
+    font-size: 1.5rem;
+}
+#skill h3 {
+    font-size: 1.3rem;
+    color: black;
+    text-align: center;
+    width: 60%;
+    align-self: flex-start;
+}
+
+#Skill img {
+    width: 10%;
+}
+
+.using-learning-other {
+   width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* service section */
+#Service {
+    width: 100%;
+    height: 100vh;
+    background-color: #14191a;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+}
+#Service h2 span {
+    color: aqua;
+    font-size: 1.5rem;
+}
+.service-container {
+    width: 80%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.service-item {
+   width: 23%;
+    padding: 21px 16px;
+    height: 78%;
+    border: 2px solid transparent;
+    background-color: #323946;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #00EEFF;
+}
+.service-item i {
+    font-size: 2.5rem;
+}
+.service-item p {
+    font-size: 0.6rem;
+}
+
+/* Contact section */
+#Contact {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+}
+
+#Contact h2 span {
+    color: aqua;
+    font-size: 1.5rem;
+}
+
+#Contact form {
+  width: 50%;
+    height: 60%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+#Contact form input {
+    height: 40px;
+    width: 100%;
+    border: hidden;
+    border-radius: 5px;
+    background-color: #14191a;
+    color: white;
+    padding: 0px 14px;
+}
+#message {
+    height: 91px;
+    border: hidden;
+    border-radius: 5px;
+    background: #14191a;
+    padding: 0px 14px;
+    color: white;
+}
+#Email , #message , #Submit {
+    grid-column: 1 / span 2;
+}
+
+/* footer */
+footer {
+    width: 100%;
+    height: 20px;
+    background-color:#14191a;
+    color: gray;
+    font-size: 0.7rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+}

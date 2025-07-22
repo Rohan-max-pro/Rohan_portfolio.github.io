@@ -1,0 +1,394 @@
+@media only screen and (max-width: 412px) {
+    /* body {
+        background-color: red;
+    } */
+
+    /* home */
+    .nav-menu {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hidden {
+        visibility: visible;
+        right: 44px;
+    }
+
+    .hidden i {
+        font-size: 2rem;
+    }
+
+    .leftsection {
+        height: 71%;
+        width: 84%;
+    }
+
+    .leftsection>div {
+        line-height: 35px;
+    }
+
+    .leftsection h1 {
+        font-size: 2.6rem;
+        line-height: 31px;
+    }
+
+    /* about */
+    #About {
+        width: 100%;
+        height: 209vh;
+        background-color: #14191a;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    h2 {
+        margin-top: 120px;
+    }
+
+    .About-menu {
+        width: 81%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: beige;
+
+    }
+
+    .icons {
+        margin: unset;
+    }
+
+    .profie {
+        width: 100%;
+        height: 100%;
+        background-color: #052926;
+        border: none;
+        border-radius: 11px;
+        position: relative;
+        bottom: 2px;
+    }
+
+    .profie img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: inherit;
+        bottom: 0px;
+    }
+
+    .details {
+        width: 100%;
+        height: 96%;
+        justify-content: unset;
+        margin: 44px 0 110px;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .edu {
+        width: 80px;
+    }
+
+    .details li:nth-child(2) {
+        position: absolute;
+        top: -3px;
+        right: 78px;
+        width: 88px;
+    }
+
+    .details li:nth-child(3) {
+        position: absolute;
+        top: 0px;
+        right: -4px;
+        line-height: 20px;
+    }
+
+    .details li span {
+        line-height: 20px;
+        font-size: 0.9rem;
+    }
+
+    /* service */
+
+    #Service {
+        height: 209vh;
+        justify-content: space-around;
+    }
+
+    .service-container {
+
+        height: 80%;
+        gap: 30px;
+        flex-direction: column;
+        margin-bottom: 74px;
+    }
+
+    .service-item {
+        width: 93%;
+    }
+
+    /* skill */
+    .using-learning-other {
+        width: 104%;
+    }
+
+    /* Contaxt me */
+
+    #Contact {
+        height: 142vh;
+    }
+
+
+    #Contact form {
+        width: 70%;
+        height: 65%;
+        grid-template-columns: 1fr;
+    }
+
+    #Email,
+    #message,
+    #Submit {
+        grid-column: 1;
+    }
+
+
+}
+
+
+@media only screen and (min-width : 413px) and (max-width :600px) {
+
+    /* home */
+    .nav-menu {
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 176px;
+        right: -23px;
+    }
+
+    .hidden {
+        visibility: visible;
+        position: absolute;
+        right: 44px;
+    }
+
+    .hidden i {
+        font-size: 2rem;
+    }
+
+    .leftsection h1 {
+        font-size: 2.8rem;
+        line-height: 36px;
+    }
+
+    .leftsection>div {
+        line-height: 35px;
+    }
+
+    .icons {
+        margin: unset;
+    }
+
+    /* About  */
+
+    #About {
+        width: 100%;
+        height: 249vh;
+        background-color: #14191a;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    h2 {
+        margin-top: 120px;
+    }
+
+    .About-menu {
+        width: 80%;
+        height: 100%;
+        flex-direction: column;
+
+    }
+
+    .profie {
+        width: 100%;
+        height: 100%;
+        background-color: #052926;
+        border: none;
+        border-radius: 11px;
+        position: relative;
+        bottom: 2px;
+    }
+
+    .profie img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        border-radius: inherit;
+        bottom: 0px;
+    }
+
+    .details {
+        width: 100%;
+        height: 96%;
+        justify-content: unset;
+        margin: 44px 0 110px;
+        flex-direction: column;
+        position: relative;
+    }
+
+    .details li:nth-child(2) {
+        position: absolute;
+        top: -3px;
+        right: 78px;
+        width: 88px;
+    }
+
+    .details li:nth-child(3) {
+        position: absolute;
+        top: 0px;
+        right: -4px;
+        line-height: 20px;
+    }
+
+    .details li span {
+        line-height: 20px;
+        font-size: 0.9rem;
+    }
+
+    /* service  */
+
+    #Service {
+        height: 227vh;
+        justify-content: space-around;
+    }
+
+    .service-container {
+
+        height: 80%;
+        gap: 30px;
+        flex-direction: column;
+        margin: 37px 0 115px;
+    }
+
+    .service-item i {
+        font-size: 3.5rem;
+    }
+
+    .service-item {
+        width: 93%;
+    }
+
+    .service-item p {
+        font-size: 0.9rem;
+    }
+
+    h4 {
+        font-size: 2rem;
+    }
+
+    /* skill */
+    #Skill {
+        height: 118vh;
+    }
+
+    .using-learning-other {
+        width: 104%;
+    }
+
+    /* Contaxt me */
+
+    #Contact {
+        height: 142vh;
+    }
+
+
+    #Contact form {
+        width: 70%;
+        height: 65%;
+        grid-template-columns: 1fr;
+    }
+
+    #Email,
+    #message,
+    #Submit {
+        grid-column: 1;
+    }
+}
+
+@media only screen and (min-width :601px) and (max-width :900px) {
+
+    /* nav bar  */
+
+    nav {
+        justify-content: space-evenly;
+    }
+    .nav-menu {
+        width: 64%;
+        gap: 10px;
+        }
+
+        /* about  */
+    #About {
+    width: 100%;
+    height: 162vh;
+    }
+    .About-menu {
+    width: 85%;
+    height: 64%;
+	justify-content: space-between;
+    }
+
+    .profie {
+        width: 29%;
+        height: 52%;
+    }
+    .profie img {
+        height: 100%;
+    }
+
+    .details {
+        width: 67%;
+        height: 100%;
+    }
+
+
+    /* service  */
+
+    #Service {
+    width: 100%;
+    height: 133vh;
+	justify-content: space-evenly;
+    }
+
+    .service-container {
+    width: 84%;
+    height: 76%;
+	flex-wrap: wrap;
+    gap: 23px;
+    }
+
+    .service-item {
+    width: 47%;
+    height: 258px;
+    }
+
+
+    #Contact {
+        height: 111vh;
+    }
+    #Contact form {
+    width: 70%;
+    height: 61%;
+    }
+
+}
