@@ -9,7 +9,9 @@
     font-family: "Baloo Bhai 2";
     
 }
-
+main {
+    width : 100%;
+}
 body {
     background-color: #323946;
     position: relative;
