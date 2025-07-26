@@ -7,15 +7,26 @@
     margin: 0px;
     font-size: 1rem;
     font-family: "Baloo Bhai 2";
-    
+
 }
-main {
-    width : 100%;
+
+html{
+    max-width: 100%;
+    overflow-x: hidden;
 }
+
+/* main {
+    width: 100%;
+} */
+
 body {
     background-color: #323946;
     position: relative;
+    margin: 0;
+    padding: 0;
+   
 }
+
 /* nav bar */
 header {
     position: sticky;
@@ -30,25 +41,28 @@ nav {
     justify-content: space-around;
     align-items: center;
     opacity: .82;
-    background:#371445;
+    background: #371445;
     /* background-image: linear-gradient(to right, aliceblue, #84e0ff); */
 
 }
-.hidden{
+
+.hidden {
     visibility: hidden;
     position: fixed;
     top: 18px;
     color: #00EEFF;
 
 }
-.logo p{
-   color: #63c4eb;
+
+.logo p {
+    color: #63c4eb;
     font-size: 2.5rem;
     width: 79%;
     height: 55px;
     font-variant: small-caps;
-   
+
 }
+
 .logo ::first-letter {
     color: #ff004f;
     font-size: 43px;
@@ -59,16 +73,19 @@ nav {
     display: flex;
     gap: 28px;
 }
+
 .nav-menu li {
     width: 19%;
     padding: 0px 11px;
     border: 2px solid transparent;
     border-radius: 10px;
 }
+
 .nav-menu li:hover {
-    border:2px solid white;
+    border: 2px solid white;
 }
-.nav-menu li a{
+
+.nav-menu li a {
     text-decoration: none;
     color: cornflowerblue;
     font-size: 1.3rem;
@@ -90,7 +107,7 @@ nav {
     background-repeat: no-repeat;
 }
 
-.box{
+.box {
     position: absolute;
     top: 0;
     width: 100%;
@@ -99,7 +116,7 @@ nav {
     opacity: 0.50;
 }
 
-.leftsection{
+.leftsection {
     height: 75%;
     width: 70%;
     display: flex;
@@ -110,53 +127,60 @@ nav {
     z-index: 1;
 }
 
-.leftsection h1{
+.leftsection h1 {
     font-size: 3.8rem;
     line-height: 60px;
     font-family: 'baloo bhaina 2';
 }
-.leftsection p{
+
+.leftsection p {
     width: 50%;
 }
-.leftsection > div {
+
+.leftsection>div {
     font-size: 1.9rem;
     font-weight: bold;
     font-family: ui-sans-serif;
 }
-.leftsection > div span {
+
+.leftsection>div span {
     color: darkviolet;
     font-size: 2rem;
 }
+
 .icons {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-left: 115px;
 }
+
 .icons i {
     font-size: 2rem;
 }
 
-.rightsection{
-   height: 91%;
+.rightsection {
+    height: 91%;
     width: 30%;
     z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.home-image{
+
+.home-image {
     width: 90%;
     height: 67%;
     position: relative;
 }
-.home-image img{
+
+.home-image img {
     position: absolute;
     width: 66%;
     z-index: 2;
 }
-.circle
-{
+
+.circle {
     width: 53%;
     height: 48%;
     background-color: #051b1b;
@@ -179,11 +203,13 @@ nav {
     align-items: center;
     gap: 36px;
 }
- h2{
+
+h2 {
     font-size: 1.5rem;
     color: #14bd7c;
     text-align: center;
 }
+
 #About h2 span {
     color: aqua;
     font-size: 1.5rem;
@@ -198,6 +224,7 @@ nav {
     color: beige;
 
 }
+
 .profie {
     width: 29%;
     height: 122%;
@@ -207,10 +234,11 @@ nav {
     position: relative;
     bottom: 2px;
 }
-.profie p
-{
+
+.profie p {
     color: #051b1b;
 }
+
 .details {
     width: 74%;
     height: 96%;
@@ -219,12 +247,14 @@ nav {
     justify-content: space-evenly;
     align-items: flex-start;
 }
+
 .edu {
     display: inline-block;
     padding: 0 0 3px;
     border-bottom: 2px solid aliceblue;
     color: chartreuse;
 }
+
 .details li div {
     color: #00EEFF;
     font-weight: 600;
@@ -249,10 +279,12 @@ nav {
     justify-content: center;
     gap: 19px;
 }
+
 #Skill h2 span {
     color: aqua;
     font-size: 1.5rem;
 }
+
 #skill h3 {
     font-size: 1.3rem;
     color: black;
@@ -266,11 +298,12 @@ nav {
 }
 
 .using-learning-other {
-   width: 60%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    overflow-x: hidden;
 }
 
 /* service section */
@@ -280,13 +313,15 @@ nav {
     background-color: #14191a;
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
+
 #Service h2 span {
     color: aqua;
     font-size: 1.5rem;
 }
+
 .service-container {
     width: 80%;
     height: 50%;
@@ -294,8 +329,9 @@ nav {
     justify-content: space-evenly;
     align-items: center;
 }
+
 .service-item {
-   width: 23%;
+    width: 23%;
     padding: 21px 16px;
     height: 78%;
     border: 2px solid transparent;
@@ -307,9 +343,11 @@ nav {
     align-items: center;
     color: #00EEFF;
 }
+
 .service-item i {
     font-size: 2.5rem;
 }
+
 .service-item p {
     font-size: 0.6rem;
 }
@@ -331,7 +369,7 @@ nav {
 }
 
 #Contact form {
-  width: 50%;
+    width: 50%;
     height: 60%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -348,6 +386,7 @@ nav {
     color: white;
     padding: 0px 14px;
 }
+
 #message {
     height: 91px;
     border: hidden;
@@ -356,7 +395,10 @@ nav {
     padding: 0px 14px;
     color: white;
 }
-#Email , #message , #Submit {
+
+#Email,
+#message,
+#Submit {
     grid-column: 1 / span 2;
 }
 
@@ -364,7 +406,7 @@ nav {
 footer {
     width: 100%;
     height: 20px;
-    background-color:#14191a;
+    background-color: #14191a;
     color: gray;
     font-size: 0.7rem;
     text-align: center;
