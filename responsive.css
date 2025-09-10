@@ -9,11 +9,30 @@
         overflow-x: hidden;
     } */
 
+    h5 {
+        font-size: 0.9rem;
+    }
+
     /* home */
     .nav-menu {
         visibility: hidden;
-        display: flex;
+        position: fixed;
+        top: 0;
+        gap: 1em;
+        right: 0;
+        width: 0;
+        z-index: 7;
+        padding: 6em 0;
+        height: 100vh;
         flex-direction: column;
+        background: rebeccapurple;
+        transition: width 1s linear , padding 1s linear;
+    }
+    nav:hover .nav-menu{
+        width: 9em;
+        cursor: pointer;
+        visibility: visible;
+        padding: 6em 2em;
     }
 
     .hidden {
@@ -42,36 +61,29 @@
     /* about */
     #About {
         width: 100%;
-        height: 209vh;
+        height: auto;
         background-color: #14191a;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: unset;
         align-items: center;
         gap: 25px;
     }
 
     h2 {
-        margin-top: 49px;
+        margin-top: 62px;
     }
 
     .About-menu {
-        width: 81%;
-        height: 100%;
-        display: flex;
+        width: 85%;
+        height: 80%;
         flex-direction: column;
-        align-items: center;
-        color: beige;
 
-    }
-
-    .icons {
-        margin: unset;
     }
 
     .profie {
         width: 100%;
-        height: 100%;
+        height: 17em;
         background-color: #052926;
         border: none;
         border-radius: 11px;
@@ -89,35 +101,35 @@
 
     .details {
         width: 100%;
+        height: 51%;
+        justify-content: unset;
+        margin: 14px 0 12px;
+        flex-direction: column;
+        position: relative;
+        padding: 16px;
+    }
+
+    .common {
+        width: 11em;
+    }
+
+    .common h5 {
+        font-size: 0.6rem;
+    }
+
+    .details #tab-1 div {
+        margin-top: 8px;
+    }
+
+    /* .details {
+        width: 100%;
         height: 96%;
         justify-content: unset;
         margin: 44px 0 49px;
         flex-direction: column;
         position: relative;
-    }
+    } */
 
-    .edu {
-        width: 80px;
-    }
-
-    .details li:nth-child(2) {
-        position: absolute;
-        top: -3px;
-        right: 78px;
-        width: 88px;
-    }
-
-    .details li:nth-child(3) {
-        position: absolute;
-        top: 0px;
-        right: -4px;
-        line-height: 20px;
-    }
-
-    .details li span {
-        line-height: 20px;
-        font-size: 0.9rem;
-    }
 
     /* service */
 
@@ -139,15 +151,21 @@
     }
 
     /* skill */
+    #Skill {
+        height: 92vh;
+    }
+
+
     .using-learning-other {
-       max-width: 100%;
+        max-width: 100%;
     }
 
     /* Contaxt me */
 
     #Contact {
-       height: 120vh;
-       gap: 15px;
+        height: 90vh;
+        gap: 9px;
+        justify-content: unset;
     }
 
     #Contact h2 {
@@ -157,11 +175,13 @@
 
     #Contact form {
         width: 70%;
-        height: 65%;
+        gap: 7px;
+        height: 60%;
         grid-template-columns: 1fr;
     }
 
     #Email,
+    #Name,
     #message,
     #Submit {
         grid-column: 1;
@@ -176,11 +196,23 @@
     /* home */
     .nav-menu {
         visibility: hidden;
-        display: flex;
+        position: fixed;
+        top: 0;
+        gap: 1em;
+        right: 0;
+        width: 0;
+        z-index: 7;
+        padding: 6em 0;
+        height: 100vh;
         flex-direction: column;
-        position: relative;
-        top: 176px;
-        right: -23px;
+        background: rebeccapurple;
+        transition: width 1s linear , padding 1s linear;
+    }
+    nav:hover .nav-menu{
+        width: 9em;
+        cursor: pointer;
+        visibility: visible;
+        padding: 6em 2em;
     }
 
     .hidden {
@@ -210,7 +242,7 @@
 
     #About {
         width: 100%;
-        height: 249vh;
+        height: 180vh;
         background-color: #14191a;
         display: flex;
         flex-direction: column;
@@ -220,11 +252,11 @@
     }
 
     h2 {
-        margin-top: 90px;
+        margin-top: 62px;
     }
 
     .About-menu {
-        width: 80%;
+        width: 85%;
         height: 100%;
         flex-direction: column;
 
@@ -250,30 +282,25 @@
 
     .details {
         width: 100%;
-        height: 65%;
+        height: 51%;
         justify-content: unset;
-        margin: 44px 0 31px;
+        margin: 14px 0 12px;
         flex-direction: column;
         position: relative;
+        padding: 16px;
     }
 
-    .details li:nth-child(2) {
-        position: absolute;
-        top: -3px;
-        right: 78px;
-        width: 88px;
+    .details #tab-1 div {
+        margin-top: 8px;
     }
 
-    .details li:nth-child(3) {
-        position: absolute;
-        top: 0px;
-        right: -4px;
-        line-height: 20px;
+    .common {
+        width: min-content;
+        line-height: 22px;
     }
 
-    .details li span {
-        line-height: 20px;
-        font-size: 0.9rem;
+    #tab-1 {
+        width: 98%;
     }
 
     /* service  */
@@ -309,7 +336,7 @@
 
     /* skill */
     #Skill {
-       height: 85vh;
+        height: 85vh;
     }
 
     .using-learning-other {
@@ -319,17 +346,20 @@
     /* Contaxt me */
 
     #Contact {
-        height: 142vh;
+        height: 90vh;
+        gap: 9px;
+        justify-content: unset;
     }
-
 
     #Contact form {
         width: 70%;
-        height: 65%;
+        gap: 7px;
+        height: 60%;
         grid-template-columns: 1fr;
     }
 
     #Email,
+    #Name,
     #message,
     #Submit {
         grid-column: 1;

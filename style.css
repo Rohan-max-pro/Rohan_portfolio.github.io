@@ -10,9 +10,13 @@
 
 }
 
-html{
+html {
     max-width: 100%;
     overflow-x: hidden;
+}
+
+h5 {
+    font-size: 1.1rem;
 }
 
 /* main {
@@ -24,7 +28,7 @@ body {
     position: relative;
     margin: 0;
     padding: 0;
-   
+
 }
 
 /* nav bar */
@@ -38,7 +42,8 @@ nav {
     width: 100%;
     height: 55px;
     display: flex;
-    justify-content: space-around;
+    padding: 1em;
+    justify-content: space-between;
     align-items: center;
     opacity: .82;
     background: #371445;
@@ -152,7 +157,6 @@ nav {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-left: 115px;
 }
 
 .icons i {
@@ -180,7 +184,7 @@ nav {
     z-index: 2;
 }
 
-.circle {
+/* .circle {
     width: 53%;
     height: 48%;
     background-color: #051b1b;
@@ -190,12 +194,12 @@ nav {
     top: 66px;
     left: 24px;
     box-shadow: 1px 18px 15px 1px #465d63;
-}
+} */
 
 /* About section */
 #About {
     width: 100%;
-    height: 115vh;
+    height: 140vh;
     background-color: #14191a;
     display: flex;
     flex-direction: column;
@@ -217,17 +221,16 @@ h2 {
 
 .About-menu {
     width: 81%;
-    height: 58%;
+    height: 69%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: beige;
-
 }
 
 .profie {
     width: 29%;
-    height: 122%;
+    height: 74%;
     background-color: #052926;
     border: none;
     border-radius: 11px;
@@ -240,22 +243,66 @@ h2 {
 }
 
 .details {
-    width: 74%;
-    height: 96%;
+    width: 59%;
+    height: 98%;
     list-style: none;
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    padding: 34px;
     align-items: flex-start;
 }
+#tab-1 {
+    padding: 0.45em 0; }
 
-.edu {
-    display: inline-block;
-    padding: 0 0 3px;
-    border-bottom: 2px solid aliceblue;
+.detail-menu {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    gap: 8%;
+    list-style: none;
+    justify-content: flex-start;
+}
+
+.common a {
+    text-decoration: none;
+    color: aliceblue;
+    position: relative;
+}
+
+.common:hover {
     color: chartreuse;
 }
 
-.details li div {
+.common:hover::after {
+    width: 100%;
+}
+
+.common {
+    width: auto;
+    position: relative;
+    transition: 0.5s ease-in 10ms;
+
+}
+
+.common::after {
+    content: '';
+    background-color: aliceblue;
+    width: 0;
+    height: 3px;
+    margin: -8px 0px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 1px;
+    transition: 0.5s ease-in 10ms;
+}
+
+.active {
+    display: block;
+}
+
+.details #tab-1 div {
     color: #00EEFF;
     font-weight: 600;
     margin-top: 19px;
@@ -330,6 +377,7 @@ h2 {
     align-items: center;
 }
 
+
 .service-item {
     width: 23%;
     padding: 21px 16px;
@@ -342,6 +390,12 @@ h2 {
     justify-content: space-evenly;
     align-items: center;
     color: #00EEFF;
+    transition: box-shadow 0.4s ease-in-out 10ms;
+}
+
+.service-item:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 20px 2px aqua;
 }
 
 .service-item i {
@@ -397,6 +451,7 @@ h2 {
 }
 
 #Email,
+#Name,
 #message,
 #Submit {
     grid-column: 1 / span 2;
